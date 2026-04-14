@@ -122,19 +122,3 @@
 
 
 
-<h2>Author</h2>
-
-
-
-<p>Abdul<br>
-
-Integral University, Lucknow<br>
-
-BCA Final Year Project 2025-2026</p>
-
-
-
-<hr>
-
-<p><i>Submitted in partial fulfillment of BCA degree requirements.</i></p>
-
