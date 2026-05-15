@@ -1,124 +1,47 @@
-<h1>Agricultural Decision Support System</h1>
+# Agricultural Decision Support System
 
+A hybrid ML and rule-based advisory system for rice farmers in Bihar, India.
 
+## Features
 
-<p>A hybrid machine learning and rule-based advisory system for rice farmers in Bihar, India.</p>
+- **Soil Analysis** - XGBoost model (98.7% accuracy)
+- **Leaf Diagnosis** - KNN model with 17 visual features (81% accuracy)
+- **Fertilizer Recommendations** - NPK quantities based on Bihar standards
+- **Disease Risk Assessment** - Weather-based predictions
+- **Economic Impact** - Revenue and loss calculations
 
+## Tech Stack
 
+- Python 3.11
+- Flask
+- XGBoost
+- scikit-learn
+- OpenCV
+- HTML, CSS, JavaScript
 
-<h2>Overview</h2>
+## Quick Start
 
+1. Clone the repository
+2. Run: pip install -r requirements.txt
+3. Run: python app.py
+4. Open: http://localhost:5000
 
+## Project Structure
 
-<p>This system provides data-driven recommendations for soil fertility management and nutrient deficiency detection in rice crops.</p>
+- app.py - Flask backend
+- advisory_engine.py - Rule-based advisory logic
+- leaf_features.py - Feature extraction for leaf images
+- models/ - Trained ML models
+- static/ - CSS, JS, HTML files
+- MAIN/models/ - Screenshots
 
+## Model Performance
 
+- XGBoost: Soil Fertility - 98.7% accuracy
+- KNN: Leaf Deficiency - 81.0% accuracy
 
-<h2>Features</h2>
+## Screenshots
 
-
-
-<ul>
-
-&#x20; <li><b>Soil Fertility Analysis</b> - XGBoost model with 98.7% accuracy</li>
-
-&#x20; <li><b>Leaf Deficiency Detection</b> - KNN model with 81% accuracy</li>
-
-&#x20; <li><b>Fertilizer Recommendations</b> - Precise NPK quantities</li>
-
-&#x20; <li><b>Disease Risk Assessment</b> - Weather-based predictions</li>
-
-&#x20; <li><b>Economic Impact</b> - Revenue and loss calculations</li>
-
-</ul>
-
-
-
-<h2>Tech Stack</h2>
-
-
-
-<ul>
-
-&#x20; <li><b>Backend:</b> Flask (Python)</li>
-
-&#x20; <li><b>ML Models:</b> XGBoost, K-Nearest Neighbors</li>
-
-&#x20; <li><b>Image Processing:</b> OpenCV</li>
-
-&#x20; <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
-
-</ul>
-
-
-
-<h2>Installation</h2>
-
-
-
-<ol>
-
-&#x20; <li>Clone the repository</li>
-
-&#x20; <li>Create virtual environment: <code>python -m venv venv</code></li>
-
-&#x20; <li>Activate: <code>venv\\Scripts\\activate</code> (Windows)</li>
-
-&#x20; <li>Install: <code>pip install -r requirements.txt</code></li>
-
-&#x20; <li>Run: <code>python app.py</code></li>
-
-</ol>
-
-
-
-<h2>Usage</h2>
-
-
-
-<p><b>Soil Analysis:</b> Enter NPK values and growth stage at <code>/</code></p>
-
-<p><b>Leaf Diagnosis:</b> Upload leaf image at <code>/leaf</code></p>
-
-
-
-<h2>Model Performance</h2>
-
-
-
-<table border="1" cellpadding="5">
-
-&#x20; <tr>
-
-&#x20;   <th>Model</th>
-
-&#x20;   <th>Task</th>
-
-&#x20;   <th>Accuracy</th>
-
-&#x20; </tr>
-
-&#x20; <tr>
-
-&#x20;   <td>XGBoost</td>
-
-&#x20;   <td>Soil Fertility</td>
-
-&#x20;   <td>98.7%</td>
-
-&#x20; </tr>
-
-&#x20; <tr>
-
-&#x20;   <td>KNN</td>
-
-&#x20;   <td>Leaf Deficiency</td>
-
-&#x20;   <td>81.0%</td>
-
-&#x20; </tr>
-
-</table>
-
-
+Soil Analysis: MAIN/models/soil_screenshot.png
+Leaf Diagnosis: MAIN/models/leaf_screenshot.png
 
